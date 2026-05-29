@@ -1,0 +1,63 @@
+name: CD
+
+on:
+    push:
+        branches:
+            - dev
+            - qa
+            - main
+
+jobs: 
+    deploy-dev: 
+        name: Deploy to Dev
+        if: github.ref == 'refs/heads/dev'
+        runs-on: ubuntu-latest
+        environment: 
+          name: Dev
+
+        steps: 
+            - name: Checkout code
+              uses: actions/checkout@v4
+            
+            - name: Deploy Dev
+              env:
+                APP_ENV: dev
+              run: |
+                echo "🚀 Deployed to 'Dev'"
+                echo "APP_ENV: $APP_ENV"
+
+    deploy-qa:
+        name: Deploy to QA
+        if: github.ref == 'refs/heads/qa'
+        runs-on: ubuntu-latest
+        environment: 
+          name: QA
+
+        steps: 
+            - name: Checkout code
+              uses: actions/checkout@v4
+            
+            - name: Deploy QA
+              env:
+                APP_ENV: qa
+              run: |
+                echo "🚀 Deployed to 'QA'"
+                echo "APP_ENV: $APP_ENV"
+    
+    deploy-prod:
+        name: Deploy to Prod
+        if: github.ref == 'refs/heads/main'
+        runs-on: ubuntu-latest
+        environment: 
+          name: Prod
+
+        steps: 
+            - name: Checkout code
+              uses: actions/checkout@v4
+            
+            - name: Deploy Prod
+              env:
+                APP_ENV: prod
+              run: |
+                echo "🚀 Deployed to 'Prod'"
+                echo "APP_ENV: $APP_ENV"
