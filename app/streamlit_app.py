@@ -9,7 +9,7 @@ def get_environment_config(env_name: str) -> dict:
         },
         "qa": {
             "title": "QA Environment",
-            "background": "#fff3cd"
+            "background": "#92730e"
         },
         "prod": {
             "title": "Production Environment",
