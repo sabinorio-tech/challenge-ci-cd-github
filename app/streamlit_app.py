@@ -13,7 +13,7 @@ def get_environment_config(env_name: str) -> dict:
         },
         "prod": {
             "title": "Production Environment",
-            "background": "#f8d7da"
+            "background": "#8b222b"
         }
     }
 
