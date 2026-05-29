@@ -16,7 +16,10 @@ The goal is not to deploy a production application. Instead, the project simulat
 │   └── streamlit_app.py        # Streamlit app with environment-based styling
 ├── assets/
 │   ├── Capture d'écran 2026-05-29 120950.png
-│   └── Capture d'écran 2026-05-29 121124.png
+│   ├── Capture d'écran 2026-05-29 121124.png
+│   ├── Capture d'écran 2026-05-29 122845.png
+│   ├── Capture d'écran 2026-05-29 123756.png
+│   └── Capture d'écran 2026-05-29 123829.png
 ├── tests/
 │   └── test_app.py             # Tests for environment configuration
 ├── main.py                     # Small entry point for checking the app config
@@ -222,6 +225,18 @@ APP_ENV=prod streamlit run app/streamlit_app.py
 ### GitHub Actions Deployment Jobs
 
 ![GitHub Actions deployment jobs](assets/Capture%20d%27%C3%A9cran%202026-05-29%20121124.png)
+
+### Dev Deployment Checks
+
+![Dev deployment checks](assets/Capture%20d%27%C3%A9cran%202026-05-29%20122845.png)
+
+### QA Deployment Checks
+
+![QA deployment checks](assets/Capture%20d%27%C3%A9cran%202026-05-29%20123756.png)
+
+### Prod Deployment Checks
+
+![Prod deployment checks](assets/Capture%20d%27%C3%A9cran%202026-05-29%20123829.png)
 
 ## Checks
 
