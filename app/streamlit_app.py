@@ -5,7 +5,7 @@ def get_environment_config(env_name: str) -> dict:
     configs = {
         "dev": {
             "title": "Dev Environment",
-            "background": "#d4edda"
+            "background": "#0ab131"
         },
         "qa": {
             "title": "QA Environment",
