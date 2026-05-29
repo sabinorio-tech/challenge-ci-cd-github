@@ -11,12 +11,12 @@ def get_environment_config(env_name: str) -> dict:
         },
         "qa": {
             "title": "QA Environment",
-            "background": "#fff3cd",
+            "background": "#92730e"
         },
         "prod": {
             "title": "Production Environment",
-            "background": "#f8d7da",
-        },
+            "background": "#8b222b"
+        }
     }
 
     return configs.get(env_name.lower(), configs["dev"])
